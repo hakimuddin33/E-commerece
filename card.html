@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making hakim esprese"/> 
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce Project</title>
+</head>
+<body>
+ <!-- navbar start here -->
+ <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+ <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+       
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+            <a href="register.html" class="nav_link">Register</a>
+        </li>
+        <li class="nav_list">
+            <a href="login.html" class="nav_link">Login</a>
+        </li>
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Logout</a>
+        </li>
+        <li class="nav_list">
+            <a href="contact.html" class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list">
+            <a href="product.html" class="nav_link">Product</a>
+        </li>
+        <li class="nav_list">
+            <a href="profile.html" class="nav_link">
+                <img class="profile-icon" src="img/1.jpg" alt="Profile Icon"></a>
+        </li>
+        
+    </ul>
+    <ul class="nav-lower flex-space-around">
+        <li class="nav_list">
+            <a href="index.html" class="nav_brand nav_link">Hakim Exprese</a>
+        </li>  
+        <li class="nav_list">
+            <a href="card.html" class="nav_link">
+                <span><i class="fa-solid fa-card-shopping"></i></span>
+                Card 2 product - $124.40
+            </a>
+        </li>
+    </ul>
+</nav>
+ <!-- navbar ends here -->
+
+ <main>
+  <div class="card flex-center">
+    <div class="card-items">
+        <div class="card-itmes-heading card">
+            <h2>Shopping Card [2 itmes]</h2>
+            <div class="card-items-action">
+                <label for="select">
+                    <input type="checkbox" name="select" id="select">
+                    Select all items
+                </label>
+                <button class="btn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button class="btn">Shop More</button>
+            </div>
+        </div>
+
+        <div class="card-itmes card flex-space-around">
+            <input type="checkbox" name="" id="">
+            <img src="img/product4.jpg" alt="Product 1" class="card-item-img">
+            <div class="card-item-description">
+                <h3 class="product-name">Our Combo Pack</h3>
+                <h4 class="product-price"> Price: $225.99</h4>
+                <p class="card-item-shopping">Free Shipping</p>
+
+            </div>
+            <div class="card-item-actions">
+                    
+                    <button class="btn">
+                    <i class="fas fa-trash-alt"></i> 
+                    </button>
+                    <div>
+                        <button class="btn">
+                            <i class="fas fa-add"></i> </button>
+                            <span>3</span>
+                        <button class="btn">
+                            <i class="fas fa-minus"></i> </button>
+                    </div> 
+            </div>
+        </div>
+        <div class="card-itmes card flex-space-around">
+            <input type="checkbox" name="" id="">
+            <img src="img/product5.jpg" alt="Product 5" class="card-item-img">
+            <div class="card-item-description">
+                <h3 class="product-name">Pantha</h3>
+                <h4 class="product-price"> Price: $20.99</h4>
+                <p class="card-item-shopping">Shipping Cost $2.50</p>
+
+            </div>
+            <div class="card-item-actions">
+                    
+                    <button class="btn">
+                    <i class="fas fa-trash-alt"></i> 
+                    </button>
+                    <div>
+                        <button class="btn">
+                            <i class="fas fa-add"></i> </button>
+                            <span>1</span>
+                        <button class="btn">
+                            <i class="fas fa-minus"></i> </button>
+                    </div> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-payments">
+        <div class="card-payment-summary card">
+            <h2>Payment Summery</h2>
+            <div>
+                <p>Subtotal:</p>
+                <p>$341.44</p>
+            </div>
+            <div>
+                <p>Shipping Cost:</p>
+                <p>$2.50</p>
+            </div>
+            <div>
+                <p>Total Cost:</p>
+                <p>$343.94</p>
+            </div>
+            <button class="btn card-payment-btn">
+                Pay Now
+            </button>
+        </div>
+        <div class="card-payment-methods card">
+            <h2>Payment Methods</h2>
+            <div>
+                <i class="fa-brands fa-cc-visa fa-3x"></i>
+                <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                <i class="fa-brands fa-cc-amex fa-3x"></i>
+                <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                <i class="fa-brands fa-cc-paypal fa-3x"></i>
+            </div>
+        </div>
+
+    </div>
+  </div>
+ </main>
+    
+ <!-- footer starts here  -->
+ <footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <label for="subscrive">Subscrive to NewsLatter:</label>
+        <input 
+        type="email" 
+        id="subscrive" 
+        name="subscrive" 
+        class="footer-input" 
+        placeholder="Your Email Address">
+        <button 
+        class="btn btn-subscrive">Subscrive</button>
+    </div>
+    <div>
+        <p>&copy; Copyright 2023 Hakim Express. And rights reserve.</p>
+    </div>
+ </footer>
+ <!-- footer ends here  -->
+ <script src="script/index.js"></script>
+</body>
+</html>

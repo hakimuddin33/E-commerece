@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making hakim esprese"/> 
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce Project</title>
+</head>
+<body>
+ <!-- navbar start here -->
+ <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+<nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+       
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+            <a href="register.html" class="nav_link">Register</a>
+        </li>
+        <li class="nav_list">
+            <a href="login.html" class="nav_link">Login</a>
+        </li>
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Logout</a>
+        </li>
+        <li class="nav_list">
+            <a href="contact.html" class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list">
+            <a href="product.html" class="nav_link">Product</a>
+        </li>
+        <li class="nav_list">
+            <a href="profile.html" class="nav_link">
+                <img class="profile-icon" src="img/1.jpg" alt="Profile Icon"></a>
+        </li>
+        
+    </ul>
+    <ul class="nav-lower flex-space-around">
+        <li class="nav_list">
+            <a href="index.html" class="nav_brand nav_link">Hakim Exprese</a>
+        </li>  
+        <li class="nav_list">
+            <a href="card.html" class="nav_link">
+                <span><i class="fa-solid fa-card-shopping"></i></span>
+                Card 2 product - $124.40
+            </a>
+        </li>
+    </ul>
+</nav>
+ <!-- navbar ends here -->
+
+
+ <!-- header starts here  -->
+
+ <header class="header">
+    <div class="banner flex-space-around">
+        <marquee class="banner-title" behavior="" direction="">50% sales going on</marquee>
+        <div class="features flex-space-around">
+            <article class="feature flex-center">
+                <i class="fa-solid fa-truck feature-icon"></i>
+                <h3>Shopping with in 3days</h3>
+
+
+            </article>
+            <article class="feature flex-center ">
+                <i class="fa-brands fa-rocketchat feature-icon"></i>
+                <h3>Support 24/7</h3>
+
+
+            </article>
+            <article class="feature flex-center">
+                <i class="fa-regular fa-credit-card feature-icon"></i>
+                <h3>Safe-payment</h3>
+
+
+            </article>
+
+        </div>
+    </div>
+ </header>
+
+ <!-- header ends here  -->
+
+
+
+ <main class="flex-center">
+    <div class="sidebar">
+        <section class="categories-section">
+            <h3 class="sectiuon-title">Categories</h3>
+            <ul class="list">
+                <li class="list-item">
+                <label for="phone">
+                    <input 
+                    type="checkbox" 
+                    name="phone" 
+                    id="phone" 
+                    value="phone">
+                    Phone
+                </label>
+                </li>
+                <li class="list-item">
+                    <label for="phone">
+                        <input 
+                        type="checkbox" 
+                        name="tablets" 
+                        id="tablets" 
+                        value="tablets">
+                        Tablets
+                    </label>
+                </li>
+                <li class="list-item">
+                     <label for="phone">
+                        <input 
+                        type="checkbox" 
+                         name="television" 
+                        id="television" 
+                        value="television">
+                        Television
+                     </label>
+                </li>
+                <li class="list-item">
+                    <label for="phone">
+                         <input 
+                        type="checkbox" 
+                        name="computers" 
+                        id="computers" 
+                        value="computers">
+                        Computers
+                    </label>
+                 </li>
+                <li class="list-item">
+                    <label for="phone">
+                        <input 
+                        type="checkbox" 
+                        name="headphones" 
+                        id="headphones" 
+                        value="headphones">
+                        Headphones
+                    </label>
+                 </li>
+            </ul>
+        </section>
+        <section class="prices-section">
+            <h3 class="sectiuon-title">Price Range</h3>
+            <ul class="list">
+                <li class="list-item">
+                <label for="price1">
+                    <input 
+                    type="radio" 
+                    name="price" 
+                    id="price1" 
+                    value="[0,20]">
+                    $0-20
+                </label>
+                </li>
+                <li class="list-item">
+                    <label for="price2">
+                        <input 
+                        type="radio" 
+                        name="price" 
+                        id="price2" 
+                        value="[21,50]">
+                        $21-50
+                </label>
+                </li>
+                <li class="list-item">
+                    <label for="price3">
+                        <input 
+                        type="radio" 
+                        name="price" 
+                        id="price3" 
+                        value="[51,100]">
+                        $51-100
+                </label>
+                </li>
+                <li class="list-item">
+                    <label for="price4">
+                        <input 
+                        type="radio" 
+                        name="price" 
+                        id="price4" 
+                        value="[101,250]">
+                        $101-250
+                </label>
+                </li>
+                <li class="list-item">
+                    <label for="price5">
+                        <input 
+                        type="radio" 
+                        name="price" 
+                        id="price5" 
+                        value="[250+]">
+                        $250+
+                </label>
+                </li>
+               
+               
+            </ul>
+        </section>
+
+        <section class="shipping-section">
+            <h3 class="sectiuon-title">Shipping Options</h3>
+            <ul class="list">
+                <li class="list-item">
+                <label for="free">
+                    <input 
+                    type="checkbox" 
+                    name="Shipping" 
+                    id="free" 
+                    value="free">
+                    Free
+                </label>
+                </li>
+                <li class="list-item">
+                    <label for="paid">
+                        <input 
+                        type="checkbox" 
+                        name="Shipping" 
+                        id="paid" 
+                        value="paid">
+                        Paid
+                    </label>
+                    </li>
+
+            </ul>
+        </section>
+
+
+    </div>
+    <div class="main-content">
+        <section class="actions flex-space-around">
+            <div class="actions-sort">
+                <label for="sort">Sort By: </label>
+                <select name="sort" id="sort">
+                    <option value="sold">Most sold First</option>
+                    <option value="rating">Most rated First</option>
+                    <option value="price">Cheapest First</option>
+                    <option value="arrival">Newest First</option>
+                    <option value="discount">Biggest discount First</option>
+
+                </select>
+            </div>
+            <div class="actions-search">
+                <input type="text" placeholder="search product">
+                <button class="btn">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </section>
+        <!-- Product section start here -->
+        <section class="products">
+            <article class="product card">
+                <div class="badge">
+                    <span>5 in stock</span>
+                    <hr class="hr-desinf">
+                    <span>3 sold</span>
+                </div>
+                <img class="product-img" src="img/52.jpg" alt="product">
+                <div class="product-body">
+                    <h3 class="product-name">Best Bargar in CTG</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product-description">
+                     
+                          Maxime perferendis itaque quo dignissimos! Animi
+                           laboriosam facilis ipsam doloremque. Cum, error 
+                           vero ....... <a href="product.html" class="learn-more">Learn more</a>
+                        
+                    </p>
+                    <h4 class="product-price"> $225.99</h4>
+                    <p class="product-rating">Rating: 4.5/5</p>
+                    <button class="btn product-button"> Add to Card</button>
+                </div>
+            </article>
+            <article class="product card">
+                <div class="badge">
+                    <span>7 in stock</span>
+                    <hr class="hr-desinf">
+                    <span>5 sold</span>
+                </div>
+                <img class="product-img" src="img/product2.jpg" alt="product">
+                <div class="product-body">
+                    <h3 class="product-name">Dry Chiken</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product-description">
+                     
+                          Maxime perferendis itaque quo dignissimos! Animi
+                           laboriosam facilis ipsam doloremque. Cum, error 
+                           vero ....... <a href="product.html" class="learn-more">Learn more</a>
+                        
+                    </p>
+                    <h4 class="product-price"> $199.99</h4>
+                    <p class="product-rating">Rating: 4.4/5</p>
+                    <button class="btn product-button"> Add to Card</button>
+                </div>
+            </article>
+            <article class="product card">
+                <div class="badge">
+                    <span>5 in stock</span>
+                    <hr class="hr-desinf">
+                    <span>2 sold</span>
+                </div>
+                <img class="product-img" src="img/product3.jpg" alt="product">
+                <div class="product-body">
+                    <h3 class="product-name">Polao</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product-description">
+                     
+                          Maxime perferendis itaque quo dignissimos! Animi
+                           laboriosam facilis ipsam doloremque. Cum, error 
+                           vero ....... <a href="product.html" class="learn-more">Learn more</a>
+                        
+                    </p>
+                    <h4 class="product-price"> $125.99</h4>
+                    <p class="product-rating">Rating: 3.5/5</p>
+                    <button class="btn product-button"> Add to Card</button>
+                </div>
+            </article>
+            <article class="product card">
+                <div class="badge">
+                    <span>10 in stock</span>
+                    <hr class="hr-desinf">
+                    <span>7 sold</span>
+                </div>
+                <img class="product-img" src="img/product4.jpg" alt="product">
+                <div class="product-body">
+                    <h3 class="product-name">Our combo Pack</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product-description">
+                     
+                          Maxime perferendis itaque quo dignissimos! Animi
+                           laboriosam facilis ipsam doloremque. Cum, error 
+                           vero ....... <a href="product.html" class="learn-more">Learn more</a>
+                        
+                    </p>
+                    <h4 class="product-price"> $425.99</h4>
+                    <p class="product-rating">Rating: 4.5/5</p>
+                    <button class="btn product-button"> Add to Card</button>
+                </div>
+            </article>
+            <article class="product card">
+                <div class="badge">
+                    <span>5 in stock</span>
+                    <hr class="hr-desinf">
+                    <span>3 sold</span>
+                </div>
+                <img class="product-img" src="img/product5.jpg" alt="product">
+                <div class="product-body">
+                    <h3 class="product-name">Panta in BD</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product-description">
+                     
+                          Maxime perferendis itaque quo dignissimos! Animi
+                           laboriosam facilis ipsam doloremque. Cum, error 
+                           vero ....... <a href="product.html" class="learn-more">Learn more</a>
+                        
+                    </p>
+                    <h4 class="product-price"> $555.99</h4>
+                    <p class="product-rating">Rating: 4.2/5</p>
+                    <button class="btn product-button"> Add to Card</button>
+                </div>
+            </article>
+            <article class="product card">
+                <div class="badge">
+                    <span>18 in stock</span>
+                    <hr class="hr-desinf">
+                    <span>10 sold</span>
+                </div>
+                <img class="product-img" src="img/product6.jpg" alt="product">
+                <div class="product-body">
+                    <h3 class="product-name">Poskha</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product-description">
+                     
+                          Maxime perferendis itaque quo dignissimos! Animi
+                           laboriosam facilis ipsam doloremque. Cum, error 
+                           vero ....... <a href="product.html" class="learn-more">Learn more</a>
+                        
+                    </p>
+                    <h4 class="product-price"> $10.99</h4>
+                    <p class="product-rating">Rating: 4.5/5</p>
+                    <button class="btn product-button"> Add to Card</button>
+                </div>
+            </article>
+        </section>
+        <div class="pagimation">
+            <button class="btn pagination-btn">
+                <i class="fas fa-less-than"></i>
+            </button>
+            <button class="btn pagination-btn">2</button>
+            <button class="btn pagination-btn">3</button>
+            <button class="btn pagination-btn">4</button>
+            <button class="btn pagination-btn">5</button>
+            <button class="btn pagination-btn">6</button>
+            <button class="btn pagination-btn">7</button>
+            <button class="btn pagination-btn">8</button>
+            <button class="btn pagination-btn">9</button>
+            <button class="btn pagination-btn">10</button>
+            <button class="btn pagination-btn">...</button>
+            <button class="btn pagination-btn">
+                <i class="fas fa-greater-than"></i>
+            </button>
+        </div>
+        <!-- Product section ends here -->
+
+    </div>
+    
+ </main>
+ 
+    
+ <!-- footer starts here  -->
+
+
+ <footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <label for="subscrive">Subscrive to NewsLatter:</label>
+        <input 
+        type="email" 
+        id="subscrive" 
+        name="subscrive" 
+        class="footer-input" 
+        placeholder="Your Email Address">
+        <button 
+        class="btn btn-subscrive">Subscrive</button>
+    </div>
+    <div>
+        <p>&copy; Copyright 2023 Hakim Express. And rights reserve.</p>
+    </div>
+ </footer>
+
+
+
+ <!-- footer ends here  -->
+ <script src="script/index.js"></script>
+</body>
+</html>
